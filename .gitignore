@@ -2,7 +2,4 @@
 *.out
 *.swp
 
-~/.config/
-~/.config/nvim/
-
 .DS_Store
