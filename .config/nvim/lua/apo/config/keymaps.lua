@@ -16,3 +16,16 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to the next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to the previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in a new tab" })
+
+-- Toggle diagnostics on/off
+local diagnostics_active = true
+vim.keymap.set('n', '<leader>dd', function()
+    diagnostics_active = not diagnostics_active
+    if diagnostics_active then
+        print("Diagnostics enabled")
+    else
+        vim.diagnostic.disable()
+        print("Diagnostics disabled")
+    end
+end)
+
