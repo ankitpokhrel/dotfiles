@@ -5,6 +5,7 @@ return {
         "nvim-lua/plenary.nvim",
         { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
         "nvim-tree/nvim-web-devicons",
+        "stevearc/aerial.nvim",
     },
     config = function()
         local telescope = require("telescope")
@@ -21,9 +22,24 @@ return {
                     },
                 },
             },
+            extensions = {
+                aerial = {
+                    col1_width = 4,
+                    col2_width = 30,
+                    format_symbol = function(symbol_path, filetype)
+                        if filetype == "json" or filetype == "yaml" then
+                            return table.concat(symbol_path, ".")
+                        else
+                            return symbol_path[#symbol_path]
+                        end
+                    end,
+                    show_columns = "both",
+                }
+            }
         })
 
         telescope.load_extension("fzf")
+        telescope.load_extension("aerial")
 
         -- Keymaps
         local keymap = vim.keymap
@@ -32,5 +48,6 @@ return {
         keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Fuzzy-find recent files" })
         keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })
         keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>", { desc = "Find string under cursor in cwd" })
+        keymap.set("n", "<C-r>", "<cmd>Telescope aerial<CR>", { desc = "Show ctags" })
     end,
 }
