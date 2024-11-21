@@ -22,8 +22,6 @@ return {
                 "lua_ls",
                 "html",
                 "gopls",
-                "golangci_lint_ls",
-                "pylyzer",
             },
         })
     end,
