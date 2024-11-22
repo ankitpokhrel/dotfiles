@@ -126,7 +126,7 @@ return {
                 vim.keymap.set("n", "y", mark_copy, opts("Copy File(s)"))
 
                 vim.keymap.set("n", "mv", api.marks.bulk.move, opts("Move Bookmarked"))
-                vim.keymap.set("n", "<CR>", api.node.open.tab_drop, opts("Tab drop"))
+                vim.keymap.set("n", "<CR>", api.node.open.edit, opts("Open file"))
             end,
         })
 
