@@ -22,6 +22,7 @@ return {
                 "lua_ls",
                 "html",
                 "gopls",
+                "zls",
             },
         })
     end,

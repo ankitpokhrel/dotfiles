@@ -116,6 +116,7 @@ return {
                     api.tree.reload()
                 end
 
+                vim.keymap.set("n", "a", api.fs.create, opts("Create"))
                 vim.keymap.set("n", "p", api.fs.paste, opts("Paste"))
                 vim.keymap.set("n", "m", mark_move_j, opts("Toggle Bookmark Down"))
                 vim.keymap.set("n", "M", mark_move_k, opts("Toggle Bookmark Up"))
