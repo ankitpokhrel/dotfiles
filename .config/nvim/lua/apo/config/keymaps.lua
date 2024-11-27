@@ -17,9 +17,20 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to the next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to the previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in a new tab" })
 
+-- Move blocks
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Keep cursor at the same place
+keymap.set("n", "J", "mzJ`z")
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
+
 -- Toggle diagnostics on/off
 local diagnostics_active = true
-vim.keymap.set('n', '<leader>dd', function()
+keymap.set('n', '<leader>dd', function()
     diagnostics_active = not diagnostics_active
     if diagnostics_active then
         print("Diagnostics enabled")
