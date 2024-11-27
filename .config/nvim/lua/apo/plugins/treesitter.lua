@@ -11,6 +11,7 @@ return {
         treesitter.setup({
             highlight = {
                 enable = true,
+                additional_vim_regex_highlighting = false,
             },
             indent = { enable = true },
             autotag = { enable = true },
@@ -25,7 +26,12 @@ return {
                 "dockerfile",
                 "gitignore",
                 "query",
+                "go",
+                "zig",
             },
+            sync_install = false,
+            ignore_install = {},
+            auto_install = false,
             incremental_selection = {
                 enable = true,
                 keymaps = {
