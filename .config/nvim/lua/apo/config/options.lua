@@ -1,12 +1,22 @@
-vim.cmd("let g:netrw_liststyle = 3")
-
+local g = vim.g
 local opt = vim.opt
 
+g.netrw_liststyle = 3
+
+-- Line numbers
 opt.number = true
 opt.relativenumber = true
+opt.numberwidth = 5
 
+-- Editor look and feel
 opt.mouse = a
+opt.termguicolors = true
+opt.background = "dark"
+opt.signcolumn = "yes"
 opt.cursorline = false
+opt.guifont = "Fira Code:h13"
+opt.linespace = 8
+opt.statuscolumn = "%C%s%{v:relnum?printf('%4s',v:relnum):v:lnum}       "
 
 -- Swap and undo files
 opt.swapfile = false
@@ -29,11 +39,6 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.hlsearch = false
 opt.incsearch = true
-
--- Theme / Colorscheme
-opt.termguicolors = true
-opt.background = "dark"
-opt.signcolumn = "yes"
 
 opt.backspace = "indent,eol,start"
 
