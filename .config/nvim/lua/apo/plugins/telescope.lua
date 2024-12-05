@@ -48,6 +48,8 @@ return {
         keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Fuzzy-find recent files" })
         keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })
         keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>", { desc = "Find string under cursor in cwd" })
+        keymap.set("n", "<leader>fp", "<cmd>Telescope git_files<CR>", { desc = "Fuzzy-find project files tracked by git"} )
+        keymap.set("n", "<leader>fu", "<cmd>Telescope git_status<CR>", { desc = "Fuzzy-find changed project files"})
         keymap.set("n", "<leader>ft", "<cmd>Telescope aerial<CR>", { desc = "Show ctags" })
     end,
 }
