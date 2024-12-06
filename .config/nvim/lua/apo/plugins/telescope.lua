@@ -40,6 +40,7 @@ return {
 
         telescope.load_extension("fzf")
         telescope.load_extension("aerial")
+        telescope.load_extension("projects")
 
         -- Keymaps
         local keymap = vim.keymap
