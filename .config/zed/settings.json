@@ -1,0 +1,101 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "vim_mode": true,
+  "relative_line_numbers": true,
+  "show_inline_completions": true,
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet"
+    },
+    "version": "2"
+  },
+  "ui_font_size": 15,
+  "ui_font_family": "Fira Code",
+  "ui_font_weight": 500,
+  "buffer_font_size": 13.5,
+  "buffer_font_family": "Fira Code",
+  "buffer_line_height": {
+    "custom": 1.9
+  },
+  "buffer_font_weight": 500,
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "indent_guides": {
+    "enabled": false
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Tokyo Night Light",
+    "dark": "Tokyo Night"
+  },
+  "experimental.theme_overrides": {
+    "border": "#082B39",
+    "border.variant": "#082B39",
+    "border.selected": "#082B39",
+    "border.transparent": "#082B39",
+    "border.disabled": "#082B39",
+    "surface.background": "#072D40",
+    "background": "#092D40",
+    "element.background": "#092D40",
+    "drop_target.background": "#082b39",
+    "ghost_element.background": "#072D40",
+    "text.muted": "#9da2c9",
+    "text.placeholder": "#9da2c9",
+    "icon": "#9da2c9",
+    "icon.muted": "#9da2c9",
+    "status_bar.background": "#072D40",
+    "title_bar.background": "#072D40",
+    "title_bar.inactive_background": "#072D40",
+    "toolbar.background": "#072D40",
+    "tab_bar.background": "#072D40",
+    "tab.inactive_background": "#072D40",
+    "panel.background": "#072D40",
+    "scrollbar.track.background": "#072D40",
+    "scrollbar.track.border": "#082B39",
+    "editor.background": "#072D40",
+    "editor.gutter.background": "#072D40",
+    "editor.subheader.background": "#072D40",
+    "editor.active_line.background": "#082b39",
+    "editor.highlighted_line.background": "#082b39",
+    "editor.line_number": "#6d89a1",
+    "editor.wrap_guide": "#082B39",
+    "editor.active_wrap_guide": "#082B39",
+    "terminal.background": "#072D40",
+    "terminal.ansi.white": "#9da2c9",
+    "conflict.background": "#072D40",
+    "created.background": "#072D40",
+    "deleted.background": "#072D40",
+    "error.background": "#072D40",
+    "hidden.background": "#072D40",
+    "hint.background": "#072D40",
+    "ignored.background": "#072D40",
+    "info.background": "#072D40",
+    "modified.background": "#072D40",
+    "predictive.background": "#072D40",
+    "renamed.background": "#072D40",
+    "success.background": "#072D40",
+    "unreachable.background": "#072D40",
+    "warning.background": "#072D40",
+    "players": [
+      {
+        "cursor": "#7c7f93",
+        "background": "#7c7f93",
+        "selection": "#03546f"
+      }
+    ],
+    "syntax": {
+      "comment": {
+        "color": "#7b7f9d",
+        "font_style": null,
+        "font_weight": null
+      }
+    }
+  }
+}

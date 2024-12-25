@@ -1,0 +1,45 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-k": "menu::SelectPrev",
+      "ctrl-j": "menu::SelectNext"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-p": "file_finder::Toggle", // Use cmd-p-p to toggle recently open file until #4663 is resolved.
+      "cmd-shift-p": "command_palette::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-shift-l": "editor::DeleteLine",
+      "cmd-shift-k": "workspace::ToggleLeftDock",
+      "zz": "editor::ScrollCursorCenter",
+      "cmd-r n": "editor::Rename",
+      "gd": "editor::GoToDefinition",
+      "cmd-shift-up": "editor::MoveLineUp",
+      "cmd-shift-down": "editor::MoveLineDown",
+      "alt-shift-up": "editor::DuplicateLineUp",
+      "alt-shift-down": "editor::DuplicateLineDown"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-shift-o": "outline::Toggle",
+      "cmd-l": "go_to_line::Toggle"
+    }
+  }
+]
