@@ -30,6 +30,10 @@
   "indent_guides": {
     "enabled": false
   },
+  "tabs": {
+    "git_status": true
+  },
+  "autosave": "on_focus_change",
   "theme": {
     "mode": "system",
     "light": "Tokyo Night Light",
