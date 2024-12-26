@@ -17,7 +17,10 @@
     "context": "Workspace",
     "bindings": {
       "cmd-p": "file_finder::Toggle", // Use cmd-p-p to toggle recently open file until #4663 is resolved.
-      "cmd-shift-p": "command_palette::Toggle"
+      "cmd-shift-p": "command_palette::Toggle",
+      "ctrl-`": "workspace::NewTerminal",
+      "cmd-`": "terminal_panel::ToggleFocus",
+      "cmd-j": "workspace::ToggleBottomDock"
     }
   },
   {
