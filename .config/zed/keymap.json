@@ -28,13 +28,16 @@
     "bindings": {
       "cmd-shift-l": "editor::DeleteLine",
       "cmd-shift-k": "workspace::ToggleLeftDock",
+      "cmd-ctrl-g": "editor::SelectAllMatches", // Select all occurrences of current selection
       "zz": "editor::ScrollCursorCenter",
       "cmd-r n": "editor::Rename",
       "gd": "editor::GoToDefinition",
       "cmd-shift-up": "editor::MoveLineUp",
       "cmd-shift-down": "editor::MoveLineDown",
       "alt-shift-up": "editor::DuplicateLineUp",
-      "alt-shift-down": "editor::DuplicateLineDown"
+      "alt-shift-down": "editor::DuplicateLineDown",
+      "cmd-shift-i": "editor::AddSelectionBelow",
+      "cmd-shift-j": "editor::AddSelectionAbove"
     }
   },
   {
