@@ -1,0 +1,40 @@
+# Taps
+tap "ankitpokhrel/jira-cli"
+tap "homebrew/bundle"
+
+# CLI tools
+brew "1password-cli"
+brew "bat"
+brew "bash"
+brew "curl"
+brew "fzf"
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "go"
+brew "htop"
+brew "jira-cli"
+brew "jq"
+brew "neovide"
+brew "neovim"
+brew "ripgrep"
+brew "walk"
+brew "wget"
+brew "zig"
+brew "zsh"
+
+# Apps
+cask "1password"
+cask "brave-browser"
+cask "docker"
+cask "firefox@developer-edition"
+cask "ghostty"
+cask "github"
+cask "iterm2"
+cask "signal"
+cask "sublime-text"
+cask "zed"
+
+# Fonts
+cask "font-fira-code"
+brew "font-hack-nerd-font"
