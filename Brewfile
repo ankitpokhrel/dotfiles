@@ -40,4 +40,4 @@ cask "zed"
 
 # Fonts
 cask "font-fira-code"
-brew "font-hack-nerd-font"
+cask "font-hack-nerd-font"
