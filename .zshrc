@@ -106,6 +106,7 @@ alias jb='jira issue list -q "sprint is empty and issuetype not in (Epic, Sub-ta
 source <(fzf --zsh)
 [[ ! -f "${fpath[1]}/_jira" ]] && jira completion zsh > "${fpath[1]}/_jira"
 eval "$(starship init zsh)"
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Utilities
 function lk {

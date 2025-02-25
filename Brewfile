@@ -24,6 +24,7 @@ brew "walk"
 brew "wget"
 brew "zig"
 brew "zsh"
+brew "zsh-autosuggestions"
 
 # Apps
 cask "1password"
