@@ -1,11 +1,6 @@
 {
   "Badge Text" : "\\(user.badge)",
-  "Ansi 5 Color" : {
-    "Red Component" : 0.82745098039215681,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.50980392156862742,
-    "Green Component" : 0.21176470588235294
-  },
+  "Thin Strokes" : 0,
   "Working Directory" : "\/Users\/apo\/workspace",
   "Prompt Before Closing 2" : 1,
   "Selected Text Color" : {
@@ -14,7 +9,7 @@
     "Blue Component" : 0.63137254901960782,
     "Green Component" : 0.63137254901960782
   },
-  "ASCII Ligatures" : false,
+  "Set Local Environment Vars" : 2,
   "Rows" : 37,
   "Ansi 11 Color" : {
     "Red Component" : 0.8341064453125,
@@ -455,8 +450,8 @@
     "Green Component" : 0.6470588235294118
   },
   "Window Type" : 0,
-  "Use Bright Bold" : false,
   "Has Hotkey" : false,
+  "Use Bright Bold" : false,
   "HotKey Modifier Activation" : 0,
   "Cursor Text Color" : {
     "Red Component" : 0.027450980392156866,
@@ -538,7 +533,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.96470588235294119
   },
-  "Minimum Contrast" : 0.32000000000000001,
+  "Minimum Contrast" : 0.40000000000000002,
   "Ansi 6 Color" : {
     "Red Component" : 0.16470588235294117,
     "Color Space" : "sRGB",
@@ -548,11 +543,11 @@
   "Transparency" : 0.02,
   "Initial Text" : "",
   "Background Color" : {
-    "Red Component" : 0.027450980392156862,
+    "Red Component" : 0.11764705882352941,
     "Color Space" : "P3",
-    "Blue Component" : 0.25098039215686274,
+    "Blue Component" : 0.17254901960784313,
     "Alpha Component" : 1,
-    "Green Component" : 0.17647058823529413
+    "Green Component" : 0.11372549019607843
   },
   "HotKey Activated By Modifier" : false,
   "Faint Text Alpha" : 0.5,
@@ -575,6 +570,11 @@
   ],
   "Visual Bell" : true,
   "Custom Directory" : "Yes",
-  "Thin Strokes" : 0,
-  "Set Local Environment Vars" : 2
+  "Ansi 5 Color" : {
+    "Red Component" : 0.82745098039215681,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.50980392156862742,
+    "Green Component" : 0.21176470588235294
+  },
+  "ASCII Ligatures" : false
 }
