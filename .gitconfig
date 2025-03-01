@@ -1,7 +1,7 @@
 [init]
 	defaultBranch = main
 [core]
-	pager = delta
+    pager = delta --paging=always
 	excludesFile = $HOME/.gitignore
 [user]
 	name = Ankit Pokhrel
@@ -10,8 +10,9 @@
 [delta]
 	side-by-side = false
 	syntax-theme = GitHub
+    light = true
 [commit]
-	gpgsign = true
+    gpgsign = true
 [tag]
 	gpgsign = true
 [filter "lfs"]
