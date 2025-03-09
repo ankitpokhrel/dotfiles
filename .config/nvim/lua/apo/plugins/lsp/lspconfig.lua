@@ -4,7 +4,7 @@ return {
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
         { "antosha417/nvim-lsp-file-operations", config = true },
-        { "folke/neodev.nvim", opts = {} },
+        { "folke/neodev.nvim",                   opts = {} },
     },
     config = function()
         local lspconfig = require("lspconfig")
@@ -47,6 +47,9 @@ return {
                 opts.desc = "Show line diagnostics"
                 keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
 
+                opts.desc = "Show all diagnostics"
+                keymap.set("n", "<leader>dd", "<cmd>Telescope diagnostics<CR>", opts) -- show diagnostics accross entire project
+
                 opts.desc = "Go to previous diagnostic"
                 keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
 
@@ -67,8 +70,8 @@ return {
         -- Diagnostic symbols
         local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
         for type, icon in pairs(signs) do
-          local hl = "DiagnosticSign" .. type
-          vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+            local hl = "DiagnosticSign" .. type
+            vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
         end
 
         mason_lspconfig.setup_handlers({
@@ -92,16 +95,16 @@ return {
                     },
                 })
             end,
-            ["gopls"] = function ()
+            ["gopls"] = function()
                 lspconfig["gopls"].setup({
                     capabilities = capabilities,
                     settings = {
                         gopls = {
-                          analyses = {
-                            unusedparams = true,
-                          },
-                          staticcheck = true,
-                          gofumpt = true,
+                            analyses = {
+                                unusedparams = true,
+                            },
+                            staticcheck = true,
+                            gofumpt = true,
                         },
                     },
                 })

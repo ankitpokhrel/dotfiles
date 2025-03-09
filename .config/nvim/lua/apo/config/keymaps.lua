@@ -30,13 +30,12 @@ keymap.set("n", "N", "Nzzzv")
 
 -- Toggle diagnostics on/off
 local diagnostics_active = true
-keymap.set('n', '<leader>dd', function()
+keymap.set('n', '<leader>DD', function()
     diagnostics_active = not diagnostics_active
     if diagnostics_active then
         print("Diagnostics enabled")
     else
-        vim.diagnostic.disable()
+        vim.diagnostic.enable(false)
         print("Diagnostics disabled")
     end
 end)
-
