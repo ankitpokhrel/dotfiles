@@ -1,6 +1,6 @@
 # Basic configuration
 export LANG=en_US.UTF-8
-export PATH=/opt/homebrew/bin:$HOME/go/bin:$PATH
+export PATH=/opt/homebrew/bin:/usr/local/bin:$HOME/go/bin:$PATH
 
 # Path to your Oh My Zsh installation
 export ZSH="$HOME/.oh-my-zsh"
