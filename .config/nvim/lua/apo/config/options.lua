@@ -7,6 +7,7 @@ g.netrw_liststyle = 3
 opt.number = true
 opt.relativenumber = true
 opt.numberwidth = 5
+opt.colorcolumn = "120"
 
 -- Editor look and feel
 opt.mouse = a

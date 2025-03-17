@@ -35,5 +35,6 @@ return {
         })
 
         vim.cmd("colorscheme tokyonight")
+        vim.cmd("highlight ColorColumn ctermbg=lightgrey guibg=#2a2a40")
     end
 }
