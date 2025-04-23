@@ -1,10 +1,16 @@
 # Basic configuration
 export LANG=en_US.UTF-8
 export PATH=/opt/homebrew/bin:/usr/local/bin:$HOME/go/bin:$PATH
-export HISTCONTROL=ignoreboth
 
 # Path to your Oh My Zsh installation
 export ZSH="$HOME/.oh-my-zsh"
+
+# Ignore duplicate history
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_IGNORE_SPACE
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
