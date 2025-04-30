@@ -3,6 +3,16 @@ vim.g.maplocalleader = "\\"
 
 local keymap = vim.keymap
 
+-- Skip copying text to default register
+keymap.set('n', 'd', '"_d', { noremap = true, silent = true })
+keymap.set('v', 'd', '"_d', { noremap = true, silent = true })
+keymap.set('n', 'D', '"_D', { noremap = true, silent = true })
+keymap.set('v', 'D', '"_D', { noremap = true, silent = true })
+keymap.set('n', 'c', '"_c', { noremap = true, silent = true })
+keymap.set('v', 'c', '"_c', { noremap = true, silent = true })
+keymap.set('n', 'C', '"_C', { noremap = true, silent = true })
+keymap.set('v', 'C', '"_C', { noremap = true, silent = true })
+
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode (ESC)" })
 
 -- Window management
