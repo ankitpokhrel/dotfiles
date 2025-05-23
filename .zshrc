@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export LANG=en_US.UTF-8
 export PATH=/opt/homebrew/bin:/Users/apo/go/bin:$PATH
+export LESS="-R +g"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
