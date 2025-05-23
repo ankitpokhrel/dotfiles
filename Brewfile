@@ -25,6 +25,7 @@ brew "tree"
 brew "walk"
 brew "wget"
 brew "zig"
+brew "zoxide"
 brew "zsh"
 brew "zsh-autosuggestions"
 
