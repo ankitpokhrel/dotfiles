@@ -1,3 +1,31 @@
-background = #1E1D2C
-background-opacity = 0.97
-font-family = "Fira Code"
+background = #1e1d2c
+background-opacity = 0.95
+font-size = 13
+font-feature = -liga
+font-feature = -calt
+font-feature = -dlig
+font-family = Fira Code
+font-style-bold = true
+font-thicken = true
+font-thicken-strength = 180
+adjust-cell-width=5%
+adjust-cell-height=5%
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Mouse
+mouse-hide-while-typing = true
+
+# macOS
+macos-titlebar-style = tabs
+macos-non-native-fullscreen = false
+
+# Keybindings
+keybind = cmd+`=toggle_quick_terminal
+
+# Window
+window-theme = auto
+window-colorspace = display-p3
+window-padding-x = 8
