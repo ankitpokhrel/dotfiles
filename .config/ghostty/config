@@ -7,9 +7,9 @@ font-feature = -dlig
 font-family = Fira Code
 font-style-bold = true
 font-thicken = true
-font-thicken-strength = 180
+font-thicken-strength = 200
 adjust-cell-width=5%
-adjust-cell-height=5%
+adjust-cell-height=50%
 
 # Cursor
 cursor-style = block
