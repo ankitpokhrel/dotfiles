@@ -1,4 +1,3 @@
-background = #1e1d2c
 background-opacity = 0.95
 font-size = 13
 font-feature = -liga
@@ -10,6 +9,14 @@ font-thicken = true
 font-thicken-strength = 200
 adjust-cell-width=5%
 adjust-cell-height=50%
+
+# Colors
+background = #1e1d2c
+foreground=#f5f5f5
+selection-background=#375b79
+selection-foreground=#95a0a0
+bold-is-bright = false
+palette = 8=999999
 
 # Cursor
 cursor-style = block
