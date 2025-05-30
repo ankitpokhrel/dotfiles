@@ -1,4 +1,4 @@
-background-opacity = 0.95
+background-opacity = 0.98
 font-size = 13
 font-feature = -liga
 font-feature = -calt
@@ -12,7 +12,7 @@ adjust-cell-height=50%
 
 # Colors
 background = #1e1d2c
-foreground=#f5f5f5
+foreground=#e8e8e8
 selection-background=#375b79
 selection-foreground=#95a0a0
 bold-is-bright = false
@@ -21,6 +21,7 @@ palette = 8=999999
 # Cursor
 cursor-style = block
 cursor-style-blink = false
+shell-integration-features = no-cursor
 
 # Mouse
 mouse-hide-while-typing = true
