@@ -1,4 +1,4 @@
-background-opacity = 0.98
+# Text
 font-size = 13
 font-feature = -liga
 font-feature = -calt
@@ -15,6 +15,7 @@ background = #1e1d2c
 foreground=#e8e8e8
 selection-background=#375b79
 selection-foreground=#95a0a0
+background-opacity = 0.98
 bold-is-bright = false
 palette = 8=999999
 
