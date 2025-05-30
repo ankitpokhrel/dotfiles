@@ -37,3 +37,5 @@ keybind = cmd+`=toggle_quick_terminal
 window-theme = auto
 window-colorspace = display-p3
 window-padding-x = 8
+window-height = 30
+window-width = 140
