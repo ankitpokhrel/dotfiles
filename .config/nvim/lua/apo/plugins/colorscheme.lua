@@ -2,15 +2,16 @@ return {
     "folke/tokyonight.nvim",
     priority = 1000,
     config = function()
-        local bg = "#1E1D2C"
-        local bg_dark = "#1E1D2C"
-        local bg_highlight = "#074A64"
-        local bg_search = "#0A64AC"
+        local bg = "#1e1d2c"
+        local bg_dark = "#1e1d2c"
+        local bg_highlight = "#074a64"
+        local bg_search = "#0a64ac"
         local bg_visual = "#275378"
-        local fg = "#CBE0F0"
-        local fg_dark = "#B4D0E9"
-        local fg_gutter = "#627E97"
+        local fg = "#cbe0f0"
+        local fg_dark = "#b4d0e9"
+        local fg_gutter = "#627e97"
         local border = "#547998"
+        local comment = "#c2c2c2"
 
 
         require("tokyonight").setup({
@@ -31,6 +32,7 @@ return {
                 colors.fg_float = fg
                 colors.fg_gutter = fg_gutter
                 colors.fg_sidebar = fg_dark
+                colors.comment = comment
             end
         })
 
