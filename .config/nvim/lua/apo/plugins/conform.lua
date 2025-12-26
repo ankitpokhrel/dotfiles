@@ -14,6 +14,7 @@ return {
     },
     opts = {
         formatters_by_ft = {
+            c = { "astyle", lsp_format = "fallback" },
             lua = { "stylua", lsp_format = "fallback" },
             go = { "gofmt", lsp_format = "fallback" },
             zig = { "zigfmt", lsp_format = "fallback" },

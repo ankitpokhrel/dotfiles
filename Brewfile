@@ -43,6 +43,10 @@ cask "telegram-desktop"
 cask "zed"
 cask "zen-browser"
 
+# Formatters
+brew "astyle"
+brew "stylua"
+
 # Fonts
 cask "font-fira-code"
 cask "font-hack-nerd-font"
