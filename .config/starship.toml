@@ -1,6 +1,12 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
 format = """
 $username\
-$hostname\
+${custom.userhost}\
 $directory\
 $git_branch\
 $git_state\
@@ -9,6 +15,18 @@ $cmd_duration\
 $line_break\
 $python\
 $character"""
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[custom.userhost]
+command = 'echo -n "$USER@$(hostname -s)"'
+format = '[$output]($style) '
+style = 'red'
+when = '[[ -n "$SSH_CONNECTION" ]]'
 
 [directory]
 style = "bright-blue"
@@ -23,7 +41,7 @@ format = "[$branch]($style)"
 style = "cyan"
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](250) ($ahead_behind$stashed)]($style)"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](250) ($ahead_behind$stashed)]($style) "
 style = "cyan"
 conflicted = "​"
 untracked = "​"
