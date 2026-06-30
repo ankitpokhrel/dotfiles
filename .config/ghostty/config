@@ -28,7 +28,7 @@ shell-integration-features = no-cursor
 mouse-hide-while-typing = true
 
 # macOS
-macos-titlebar-style = tabs
+macos-titlebar-style = transparent
 macos-non-native-fullscreen = false
 
 # Keybindings
